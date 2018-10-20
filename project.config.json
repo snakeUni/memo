@@ -1,13 +1,16 @@
 {
-  "miniprogramRoot": "./dist",
-  "projectname": "memo",
-  "description": "to do or plan",
-  "appid": "touristappid",
-  "setting": {
-    "urlCheck": true,
-    "es6": false,
-    "postcss": false,
-    "minified": false
-  },
-  "compileType": "miniprogram"
+	"miniprogramRoot": "dist/",
+	"projectname": "memo",
+	"description": "to do or plan",
+	"appid": "wxfa5f32c83f8141ce",
+	"setting": {
+		"urlCheck": false,
+		"es6": false,
+		"postcss": false,
+		"minified": false,
+		"newFeature": true
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.3.0",
+	"condition": {}
 }
