@@ -1,0 +1,12 @@
+.index {
+  padding: 0 10Px;
+  .hello {
+    color: red;
+  }
+  .memo-list-item {
+    margin-top: 10Px;
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+}

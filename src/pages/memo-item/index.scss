@@ -1,0 +1,44 @@
+.memo-item {
+  padding: 20px;
+  border-radius: 4Px;
+  &.low {
+    background-color: rgb(152, 121, 84);
+  }
+  &.lowest {
+    background-color: rgb(24, 164, 247);
+  }
+  &.middle {
+    background-color: rgb(255, 138, 2);
+  }
+  &.high {
+    background-color: rgb(197, 104, 221);
+  }
+  &.highest {
+    background-color: rgb(255, 36, 93);
+  }
+  .title-time {
+    display: flex;
+    align-items: center;
+    .title {
+      font-size: 16Px;
+      margin-right: auto;
+    }
+    .time {
+      font-size: 12Px;
+    }
+  }
+  .content {
+    font-size: 14Px;
+    margin-top: 10px;
+    .content-content {
+      overflow: hidden;
+      height: 40Px;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      line-clamp: 2;
+      box-orient: vertical;
+      -webkit-line-clamp:2;
+      -webkit-box-orient: vertical;
+    }
+  }
+}
