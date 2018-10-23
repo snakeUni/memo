@@ -1,5 +1,5 @@
 import Taro, { Component } from '@tarojs/taro'
-import { View, Text } from '@tarojs/components'
+import { View } from '@tarojs/components'
 import moment from 'moment'
 import * as Constant from './constant'
 import './index.scss'
@@ -28,7 +28,7 @@ export default class Index extends Component {
 
   componentDidHide () { }
 
-  getClassName (type) {
+  getClassName = type => {
     return `memo-item ${map.get(type)}`
   }
   render () {

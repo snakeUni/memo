@@ -1,0 +1,19 @@
+.memo-detail {
+  padding: 0 10Px;
+  .title {
+    .title-text {
+      font-size: 12Px;
+      color: #ccc;
+    }
+    .title-input {
+      margin-left: 10Px;
+      font-size: 16Px;
+    }
+  }
+  .content {
+    margin-top: 10Px;
+    .textarea {
+      margin-top: 10Px;
+    }
+  }
+}
