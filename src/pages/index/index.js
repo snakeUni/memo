@@ -1,5 +1,5 @@
 import Taro, { Component } from '@tarojs/taro'
-import { View, Text } from '@tarojs/components'
+import { View } from '@tarojs/components'
 import ListItem from '../memo-item/index'
 import './index.scss'
 
@@ -29,15 +29,15 @@ export default class Index extends Component {
 
   componentDidHide () { }
 
-  queryList () {
-    Taro.request({url: 'http://172.16.8.224:8080/memo/query/list'}).then(result => {
+  queryList = () => {
+    Taro.request({url: 'http://localhost:8080/memo/query/list'}).then(result => {
       this.setState({ list: result.data.result.list })
     })
   }
 
-  skip () {
+  skip = item => {
     Taro.navigateTo({
-      url: '/pages/memo-detail/memo'
+      url: `/pages/memo-detail/memo?id=${item.id}`
     })
   }
 
@@ -46,7 +46,7 @@ export default class Index extends Component {
       <View className='index'>
         {this.state.list.length ? this.state.list.map((item, index) => {
           return (
-            <View key={index} className='memo-list-item'>
+            <View key={index} className='memo-list-item' onClick={this.skip.bind(this, item)}>
               <ListItem item={item} />
             </View>
           )
